@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Socket App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--    <h1>Hi from Chat App!!!</h1>-->
+    <div id="mario-chat">
+        <h2>Chatter box</h2>
+        <div id="chat-window">
+            <div id="output"></div>
+        </div>
+        <input id="handle" type="text" placeholder="Handle" />
+        <input id="message" type="text" placeholder="Message" />
+        <button id="send">Send</button>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
