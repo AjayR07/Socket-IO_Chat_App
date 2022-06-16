@@ -22,10 +22,11 @@ io.on("connection",(socket)=>{
     // Listen to chat event
     socket.on("chat",(data)=>{
         console.log(data)
-
         io.sockets.emit("chat",data)
+    })
 
+    // Listen to typing event
+    socket.on("typing",(data)=>{
+        socket.broadcast.emit("typing",data)
     })
 })
-
-//
